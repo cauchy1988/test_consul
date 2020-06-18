@@ -1,0 +1,8 @@
+FROM cr.d.xiaomi.net/tangchao5/centos7_base:0.1
+MAINTAINER tangchao5@xiaomi.com
+
+ADD ./bin/consul /home/work/soft/consul 
+ADD ./start_consul.sh /home/work/soft/start_consul.sh
+
+CMD ["/usr/bin/bash", "/home/work/soft/start_consul.sh"]
+
